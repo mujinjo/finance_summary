@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/summary/:date", "destination": "/api/summary" }
+  ],
+  "public": true
+}
