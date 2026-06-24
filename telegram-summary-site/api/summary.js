@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import cheerio from 'cheerio';
 
 export default async function handler(req, res) {
-  const { date } = req.query;
+  const { date } = req.query; // expected YYYY-MM-DD
   if (!date || typeof date !== 'string') {
     return res.status(400).json({ error: 'Date parameter required (YYYY-MM-DD)' });
   }
